@@ -47,24 +47,15 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Liquality wallet SDK [Liquality wallet SDK ](https://docs.liquality.io/sdk/auth).
 
-### Analyzing the Bundle Size
+### liquality Github demo code 
+[demo code](https://github.com/liquality/liquality-sdk-demo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### GOOGLE AOTH SSO 
+(https://developers.google.com/identity/sign-in/web/sign-in)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Verifier Torus Web3Auth
+Verifier not supported. Check if you: 
+1. Are on the right network Torus testnet/mainnet
+2. Have setup a verifier on [Torus](dashboard.web3auth.io)? at Torus.getPublicAddress torus.ts:503:1 'GOT IN CATCH SSO'
