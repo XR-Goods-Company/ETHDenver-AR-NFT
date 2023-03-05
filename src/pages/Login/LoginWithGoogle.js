@@ -8,7 +8,9 @@ import WalletIcon from '@mui/icons-material/Wallet';
 const LoginWithGoogle = (props) => {
     const [tKey, setTKey] = useState({});
     const [price, setPrice] = useState(1)
-    const [inputAddress, setInputAddress] = useState("0x51dF6D1c2534C2Cb9348C4Fbd3227e704BA8cd3C")
+    const [inputAddress, setInputAddress] = useState("0x6051420AA1830eb7fdAf643Ac808A7C9A421543B")
+    // 0x6051420AA1830eb7fdAf643Ac808A7C9A421543B
+    // 0x51dF6D1c2534C2Cb9348C4Fbd3227e704BA8cd3C
     const web3 = new Web3("https://goerli.infura.io/v3/3501a2851ccb4b6c938e8355a1c6c45e")
 
     const directParams = {

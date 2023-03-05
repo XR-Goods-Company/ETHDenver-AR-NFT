@@ -1,53 +1,62 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
 In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
+## About the DAPP
 
-## Learn More
+1. you can Login with Google Account to create your wallet with Liquality. or log in if create a before
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. You can copy any address with NFT. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. once loged in, you can view some basic information about this address. 
+
+4. you will see all the NFT list in this wallet. if you dont have any NFT, you can send NFT to this wallet or purchase from marketplace.
+
+5. You can select on NFT to see more detail about the NFT. 
+
+6. In the Detail page, you can adtive the NFT art work in AR. just simplly click enter AR. no app download need. 
+
 
 ### Liquality wallet SDK
 
 Liquality wallet SDK (https://docs.liquality.io/sdk/auth).
+1. Used functions for create and login with Google Account
+2. Used function to list all NFT under this wallet
+
+## Infural Endpoint API
+
+Infura (https://www.infura.io)
+Used for list price about the wallet
+
+## Alchemy SDK
+https://www.alchemy.com
+used for fetch more detail about this NFT
+
+## AR function
+WebXR Device API  (https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
+
+AR Quick Look (https://developer.apple.com/augmented-reality/quick-look/)
+
+Three.js for render 3D contents (https://threejs.org)
+
+## NUI
+MUI React design Components (https://mui.com/)
+
+### Helpful link
+### GOOGLE AOTH SSO 
+(https://developers.google.com/identity/sign-in/web/sign-in)
 
 ### liquality Github demo code 
 (https://github.com/liquality/liquality-sdk-demo)
-
-### GOOGLE AOTH SSO 
-(https://developers.google.com/identity/sign-in/web/sign-in)
 
 ### Verifier Torus Web3Auth
 Verifier not supported. Check if you: 
 1. Are on the right network Torus testnet/mainnet
 2. Have setup a verifier on (dashboard.web3auth.io)? at Torus.getPublicAddress torus.ts:503:1 'GOT IN CATCH SSO'
+
+## ethScan
+(https://etherscan.io/)
+
