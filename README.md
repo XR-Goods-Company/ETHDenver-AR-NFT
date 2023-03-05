@@ -29,15 +29,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -45,12 +37,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Liquality wallet SDK
 
-Liquality wallet SDK [Liquality wallet SDK ](https://docs.liquality.io/sdk/auth).
+Liquality wallet SDK (https://docs.liquality.io/sdk/auth).
 
 ### liquality Github demo code 
-[demo code](https://github.com/liquality/liquality-sdk-demo)
+(https://github.com/liquality/liquality-sdk-demo)
 
 ### GOOGLE AOTH SSO 
 (https://developers.google.com/identity/sign-in/web/sign-in)
@@ -58,4 +50,4 @@ Liquality wallet SDK [Liquality wallet SDK ](https://docs.liquality.io/sdk/auth)
 ### Verifier Torus Web3Auth
 Verifier not supported. Check if you: 
 1. Are on the right network Torus testnet/mainnet
-2. Have setup a verifier on [Torus](dashboard.web3auth.io)? at Torus.getPublicAddress torus.ts:503:1 'GOT IN CATCH SSO'
+2. Have setup a verifier on (dashboard.web3auth.io)? at Torus.getPublicAddress torus.ts:503:1 'GOT IN CATCH SSO'
