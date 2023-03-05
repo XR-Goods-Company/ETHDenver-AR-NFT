@@ -138,7 +138,7 @@ const AccountPage = (props) => {
                     >Address:</Typography>
                     <InputBase id="outlined-basic"
                         variant="filled"
-                        value={props.loginResponse.publicAddress}
+                        value={props.loginResponse.address}
                         sx={{
                             width: "50%",
                             padding: "0 10px",
@@ -179,7 +179,7 @@ const AccountPage = (props) => {
                         width: '100%',
                     }}
                 />
-                <NFTCollection setNft={props.setNft} address={props.loginResponse.publicAddress} />
+                <NFTCollection setNft={props.setNft} address={props.loginResponse.address} />
 
             </Box>
 

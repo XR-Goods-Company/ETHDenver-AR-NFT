@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Network, Alchemy } from "alchemy-sdk";
+
+import { NftService } from "@liquality/wallet-sdk";
+
 
 import { Button, Box, Avatar, Typography } from '@mui/material';
 
@@ -9,35 +11,29 @@ import SendNFT from "./SendNFT";
 
 const NFTCollection = (props) => {
 
+    const {address} = props
 
     const [nftCollection, setNftCollection] = useState([])
 
-    const settings = {
-        apiKey: "wkpzpi-qA95xJVeqdZCOHfLDIyUjs-Ae",
-        network: Network.ETH_GOERLI,
-    };
-
-    const alchemy = new Alchemy(settings);
 
     useEffect(() => {
 
+        // const getNFT = async () => {
+        //     const nfts = await alchemy.nft.getNftsForOwner(props.address);
+        //     console.log(nfts)
+        //     setNftCollection(nfts.ownedNfts)
+        // }
+        // getNFT()
+
+
+        
         const getNFT = async () => {
-            const nfts = await alchemy.nft.getNftsForOwner(props.address);
+            const nfts = await NftService.getNfts(address, 5);
             console.log(nfts)
-            setNftCollection(nfts.ownedNfts)
+            setNftCollection(nfts)
         }
-
-
         getNFT()
-
-
     }, []);
-
-    //    https://api-goerli.etherscan.io/api
-    //    ?module=stats
-    //    &action=tokensupply
-    //    &contractaddress=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984
-    //    &apikey=YourApiKeyToken
 
 
     return (
@@ -52,7 +48,6 @@ const NFTCollection = (props) => {
                     gap: "10px"
                 }}
             >
-
                 <Typography
                     sx={{
                         fontSize: '1.2rem',
@@ -74,21 +69,13 @@ const NFTCollection = (props) => {
                     }}
                 >
 
-                    {nftCollection.length > 0 ?
+                    {nftCollection && nftCollection.length > 0 ?
                         nftCollection.map((nft, index) => (
                             <NFTCards key={index} setNft={props.setNft} nft={nft}/>
                         ))
                         :
                         <SendNFT address={props.address}></SendNFT>
-
                     }
-
-                    {/* {
-                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((ele, index) => (
-
-                            <NFTCards key={index} setNft={props.setNft} />
-                        ))
-                    } */}
                 </Box>
             </Box>
         </React.Fragment >

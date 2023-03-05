@@ -1,13 +1,8 @@
 import * as React from "react";
-
-import { Button, Box, Avatar, Typography } from '@mui/material';
-
-
+import {Box, Avatar, Typography } from '@mui/material';
 import LoginWithGoogle from "./LoginWithGoogle";
-import ExternalWallet from "./ExternalWallet";
 
 const Login = (props) => {
-
   return (
     <React.Fragment>
       <Box
@@ -22,9 +17,9 @@ const Login = (props) => {
           justifyContent: "flex-start",
           alignItems: "center",
           gap: "10px"
+
         }}
       >
-
         <Box
           sx={{
             width: "100%",
@@ -52,28 +47,21 @@ const Login = (props) => {
             }}
           >ETHDenver AR NFT</Typography>
         </Box>
-
-
         <Typography
           sx={{
             fontSize: '1rem',
             fontWeight: "200"
           }}
         >Continue with</Typography>
-        <LoginWithGoogle setLoginResponse={props.setLoginResponse} />
+        <LoginWithGoogle setPageState={props.setPageState} setLoginResponse={props.setLoginResponse} />
         <Typography
           sx={{
             fontSize: '1rem',
             fontWeight: "200"
           }}
         >External Wallet</Typography>
-
-        {/* <ExternalWallet setLoginResponse={props.setLoginResponse} /> */}
       </Box>
-
     </React.Fragment >
-
-
   );
 };
 

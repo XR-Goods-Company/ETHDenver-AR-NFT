@@ -17,8 +17,14 @@ const SendNFT = (props) => {
                 }}
             >
             <Typography>You Dont have any NFT</Typography>
-            <Typography>Send NFT to this adress:{props.address}</Typography>
-            <Typography>Or shop on marketplace:
+            <Typography>Send NFT to this adress:</Typography>
+            <Typography
+            sx={{
+                textDecoration:"underline",
+                fontSize:'0.6rem'
+            }}
+            >{props.address}</Typography>
+            <Typography>Or shop on marketplace: 
                 <a href="https://opensea.io" target="_blank" >OpenSea </a>
                 </Typography>
             </Box>

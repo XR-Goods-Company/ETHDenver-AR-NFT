@@ -1,10 +1,9 @@
 import * as React from "react";
 
-import { Card, CardMedia, CardActions, Typography, CardContent } from '@mui/material';
-import { Box, display } from "@mui/system";
+import {Typography } from '@mui/material';
+import { Box } from "@mui/system";
 
 const NFTCards = (props) => {
-
   return (
     <React.Fragment>
       <Box
@@ -22,20 +21,16 @@ const NFTCards = (props) => {
       >
         <Box
           component="img"
-          src={props.nft.rawMetadata.image}
+          src={props.nft.metadata.image}
           alt="XR-Googds-Company ar nft image"
           sx={{
             width: "100%",
           }}
         >
-
         </Box>
-
-        <Typography>{`${props.nft.rawMetadata.attributes[1].value} #${props.nft.tokenId}`}</Typography>
+        <Typography>{`${props.nft.contract.name}: #${props.nft.id.length >4 ? props.nft.id.substring(0,4) + "..." :  props.nft.id  }`}</Typography>
       </Box>
-
     </React.Fragment >
   );
 };
-
 export default NFTCards;

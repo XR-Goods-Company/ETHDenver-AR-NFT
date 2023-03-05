@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import { Box, Avatar, Typography } from '@mui/material';
-import NFTDetails from "./NFTDetails";
-
-const NFTpage = (props) => {
-    useEffect(() => {
-    }, [])
+import * as React from "react";
+import { CircularProgress, Box, Avatar, Typography } from '@mui/material';
+const Loading = () => {
     return (
         <React.Fragment>
             <Box
                 sx={{
+                    position: "absolute",
+                    top: '0',
+                    backgroundColor: "white",
                     width: "100%",
+                    height: "100%",
                     display: 'flex',
                     flexDirection: "column",
                     justifyContent: "flex-start",
@@ -25,8 +25,7 @@ const NFTpage = (props) => {
                         flexDirection: "row",
                         justifyContent: "center",
                         alignItems: "center",
-                        marginTop: "50px",
-                        zIndex: "10"
+                        marginTop: "50px"
                     }}
                 >
                     <Avatar alt="XR-Goods-Company" variant="square" src="./assets/images/xrgoodsLogo.svg"
@@ -45,16 +44,24 @@ const NFTpage = (props) => {
                         }}
                     >ETHDenver AR NFT</Typography>
                 </Box>
-                <Typography
+                <Box
                     sx={{
-                        fontSize: '1rem',
-                        fontWeight: "200"
+                        height: "60%",
+                        display: "flex",
+                        alignItems: "center",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                        width: "100vw",
+                        background: "#ffffff",
+                        zIndex: "100",
                     }}
-                >Your NFT Details</Typography>
+                >
+                    <Typography
+                    >Loading Data, Please Wait</Typography>
+                    <CircularProgress />
+                </Box>
             </Box>
-            <NFTDetails nft={props.nft} loginResponse={props.loginResponse} />
         </React.Fragment >
     );
 };
-
-export default NFTpage;
+export default Loading;
