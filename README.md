@@ -26,7 +26,7 @@ Liquality wallet SDK (https://docs.liquality.io/sdk/auth).
 1. Used functions for create and login with Google Account
 2. Used function to list all NFT under this wallet
 
-### Infural Endpoint API
+### Infura Endpoint API
 
 Infura (https://www.infura.io)
 Used for list price about the wallet
